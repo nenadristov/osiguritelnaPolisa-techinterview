@@ -5,7 +5,7 @@ workbook = xlsxwriter.Workbook('Demo-Excel.xlsx')
 worksheet = workbook.add_worksheet("Demo Excel Tabela")
 worksheet.set_column("A:E", 15)
 #naslov vo tabelata
-style_naslov=workbook.add_format({'bold': True, "align" : "center",'border': 1})
+style_naslov=workbook.add_format({'bold': True, "align" : "center", 'border': 1})
 worksheet.write("A1", "Филијала", style_naslov)
 worksheet.write("B1", "Број на полиси", style_naslov)
 worksheet.write("C1", "Број на агенти", style_naslov)
